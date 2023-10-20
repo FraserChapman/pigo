@@ -9,7 +9,6 @@ goget.sh is a Bash script designed to simplify the process of installing Go on a
 Usage
 
 ```
-chmod +x goget.sh
 ./goget.sh <go_version>
 ```
 
@@ -28,12 +27,16 @@ gone.sh is a companion script that allows you to remove Go from your system. It 
 Usage
 
 ```
-chmod +x gone.sh
 ./gone.sh
 ```
 
-`goget.sh` and `gone.sh` require set executable permissions before running them:
+## Notes 
 
+`goget.sh` and `gone.sh` require set executable permissions before running them. e.g. 
+
+```chmod +x goget.sh```
+
+```chmod +x gone.sh```
 
 ## Additional Information
 
