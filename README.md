@@ -20,7 +20,7 @@ The script will download and install the specified Go version and set up the nec
 . ./goget.sh 1.21.3
 ```
 
-Note, Using `. ./` allows the scripts to execute in the current shell, so they can relaod your profile after .
+Note, Using `. ./` allows the scripts to execute in the current shell, so they can relaod your profile after install or removal of the go binaries.
 
 ## gone.sh
 
