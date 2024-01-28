@@ -15,10 +15,10 @@ if ! command -v go &> /dev/null; then
 
     wget $GO_URL
     tar -xvf go$GO_VERSION.linux-arm64.tar.gz
-    mv go ~/.local/share
+    sudo mv go /usr/local
 
-    echo 'export GOPATH=$HOME/.local/share/go' >> ~/.profile
-    echo 'export PATH=$HOME/.local/share/go/bin:$PATH' >> ~/.profile
+    echo 'export GOPATH=$HOME/go' >> ~/.profile
+    echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.profile
     source ~/.profile
 
     # Cleanup
