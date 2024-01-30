@@ -9,7 +9,7 @@ goget.sh is a Bash script designed to simplify the process of installing Go on a
 Usage
 
 ```
-. ./goget.sh <go_version>
+./goget.sh <go_version>
 ```
 
 Replace `<go_version>` with the desired Go version number (e.g. `1.21.3`).
@@ -17,10 +17,8 @@ Replace `<go_version>` with the desired Go version number (e.g. `1.21.3`).
 The script will download and install the specified Go version and set up the necessary environment variables. e.g.
 
 ```
-. ./goget.sh 1.21.3
+./goget.sh 1.21.3
 ```
-
-Note, Using `. ./` allows the scripts to execute in the current shell, so they can relaod your profile after install or removal of the go binaries.
 
 ## gone.sh
 
@@ -29,7 +27,7 @@ gone.sh is a companion script that allows you to remove Go from your system. It 
 Usage
 
 ```
-. ./gone.sh
+./gone.sh
 ```
 
 ## Notes 
