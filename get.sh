@@ -19,11 +19,11 @@ if ! command -v go &> /dev/null; then
     sudo mv go /usr/local
 
     echo 'export GOPATH=$HOME/go' >> ~/.profile
-    echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.profile
+    echo 'export PATH=/usr/local/go/bin:$GOPATH/bin;$PATH' >> ~/.profile
 
     # Apply changes to the current shell session
     export GOPATH=$HOME/go
-    export PATH=/usr/local/go/bin:$PATH
+    export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
 
     # Cleanup
     rm $GO_GZ
