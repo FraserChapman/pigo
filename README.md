@@ -2,14 +2,14 @@
 
 Go installation and removal scripts for Raspberry Pi ARM64
 
-## goget.sh
+## get.sh
 
-goget.sh is a Bash script designed to simplify the process of installing Go on a Raspberry Pi (64-bit) system. It automatically downloads the specified Go version, configures the environment variables, and sets up the Go workspace.
+get.sh is a Bash script designed to simplify the process of installing Go on a Raspberry Pi (64-bit) system. It automatically downloads the specified Go version, configures the environment variables, and sets up the Go workspace.
 
 Usage
 
 ```
-./goget.sh <go_version>
+./get.sh <go_version>
 ```
 
 Replace `<go_version>` with the desired Go version number (e.g. `1.21.3`).
@@ -17,7 +17,7 @@ Replace `<go_version>` with the desired Go version number (e.g. `1.21.3`).
 The script will download and install the specified Go version and set up the necessary environment variables. e.g.
 
 ```
-./goget.sh 1.21.3
+./get.sh 1.21.3
 ```
 
 ## gone.sh
@@ -32,9 +32,9 @@ Usage
 
 ## Notes 
 
-`goget.sh` and `gone.sh` require set executable permissions before running them. e.g. 
+`get.sh` and `gone.sh` require set executable permissions before running them. e.g. 
 
-```chmod +x goget.sh```
+```chmod +x get.sh```
 
 ```chmod +x gone.sh```
 
